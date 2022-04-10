@@ -29,7 +29,7 @@ namespace PT2 {
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        public Strings() {
+        internal Strings() {
         }
         
         /// <summary>
@@ -57,6 +57,15 @@ namespace PT2 {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Exit.
+        /// </summary>
+        public static string Exit {
+            get {
+                return ResourceManager.GetString("Exit", resourceCulture);
             }
         }
         
